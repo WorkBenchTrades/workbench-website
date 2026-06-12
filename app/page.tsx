@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import WaitlistForm from './components/WaitlistForm';
 
 export const metadata: Metadata = {
   title: 'WorkBench — Construction Management for UK Tradespeople',
@@ -337,21 +338,12 @@ export default function HomePage() {
             <h2 style={{ fontSize: 48, fontWeight: '900', letterSpacing: -2, lineHeight: 1.05, color: '#f5f2ed', margin: '0 0 16px' }}>
               Take control of your site.
             </h2>
-            <p style={{ fontSize: 17, color: '#666', lineHeight: 1.7, margin: 0 }}>
-              Join UK tradespeople who've stopped losing money to poor admin and started running their business properly.
-            </p>
-          </div>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 12, alignItems: 'flex-start' }}>
-            <div style={{ display: 'flex', gap: 10 }}>
-              <a href="https://apps.apple.com" style={{ backgroundColor: '#f5f2ed', color: '#1a1a18', padding: '14px 24px', borderRadius: 8, textDecoration: 'none', fontWeight: '700', fontSize: 15, display: 'flex', alignItems: 'center', gap: 8 }}>
-                🍎 iOS
-              </a>
-              <a href="https://play.google.com" style={{ backgroundColor: '#f5f2ed', color: '#1a1a18', padding: '14px 24px', borderRadius: 8, textDecoration: 'none', fontWeight: '700', fontSize: 15, display: 'flex', alignItems: 'center', gap: 8 }}>
-                🤖 Android
-              </a>
-            </div>
-            <p style={{ color: '#444', fontSize: 12, margin: 0, letterSpacing: 0.2 }}>30 days free · No credit card required</p>
-          </div>
+           <p style={{ fontSize: 17, color: '#666', lineHeight: 1.7, margin: 0 }}>
+            Join UK tradespeople who've stopped losing money to poor admin and started running their business properly.
+          </p>
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 12, alignItems: 'flex-start', minWidth: 320 }}>
+          <WaitlistForm />
         </div>
       </section>
 
