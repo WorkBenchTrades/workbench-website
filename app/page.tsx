@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import WaitlistForm from './components/WaitlistForm';
 
 export const metadata: Metadata = {
-  title: 'WorkBench — Construction Management for UK Tradespeople',
-  description: 'Daily check-ins, job phases, AI quoting and MTD compliance. Built for UK carpenters, joiners and site managers.',
+  title: 'WorkBench — Construction Management App for UK Tradespeople · Coming Soon',
+  description: 'The construction management app built for UK tradespeople. Daily check-ins, AI quoting, job phases, MTD compliance. Launching soon — join the waitlist.',
 };
 
 export default function HomePage() {
@@ -19,12 +19,19 @@ export default function HomePage() {
           <span style={{ fontSize: 18, fontWeight: '800', color: '#1a1a18', letterSpacing: -0.5 }}>WorkBench</span>
         </div>
         <div style={{ display: 'flex', gap: 36, alignItems: 'center' }}>
-          <a href="#how" style={{ color: '#666', textDecoration: 'none', fontSize: 14, fontWeight: '500' }}>How it works</a>
+          <a href="#features" style={{ color: '#666', textDecoration: 'none', fontSize: 14, fontWeight: '500' }}>Features</a>
           <a href="#pricing" style={{ color: '#666', textDecoration: 'none', fontSize: 14, fontWeight: '500' }}>Pricing</a>
           <a href="#mtd" style={{ color: '#666', textDecoration: 'none', fontSize: 14, fontWeight: '500' }}>MTD</a>
-          <a href="#trial" style={{ backgroundColor: '#1a1a18', color: '#f5f2ed', padding: '9px 20px', borderRadius: 6, textDecoration: 'none', fontWeight: '600', fontSize: 14, letterSpacing: -0.2 }}>Start free trial</a>
+          <a href="#waitlist" style={{ backgroundColor: '#1a1a18', color: '#f5f2ed', padding: '9px 20px', borderRadius: 6, textDecoration: 'none', fontWeight: '600', fontSize: 14, letterSpacing: -0.2 }}>Join waitlist</a>
         </div>
       </nav>
+
+      {/* LAUNCH BANNER */}
+      <div style={{ backgroundColor: '#f97316', padding: '10px 48px', textAlign: 'center' }}>
+        <span style={{ color: '#fff', fontSize: 13, fontWeight: '600', letterSpacing: 0.3 }}>
+          🚀 Launching on iOS & Android soon — join the waitlist for early access and a free extended trial
+        </span>
+      </div>
 
       {/* HERO */}
       <section style={{ padding: '80px 48px 0', maxWidth: 1200, margin: '0 auto' }}>
@@ -32,7 +39,7 @@ export default function HomePage() {
           <div style={{ display: 'flex', alignItems: 'flex-start', gap: 8, marginBottom: 32 }}>
             <span style={{ fontFamily: 'monospace', fontSize: 11, color: '#999', letterSpacing: 1, paddingTop: 4 }}>WB-001</span>
             <span style={{ width: 1, height: 20, backgroundColor: '#ddd9d3', marginTop: 3 }}></span>
-            <span style={{ fontSize: 12, color: '#999', letterSpacing: 0.5, fontWeight: '500', paddingTop: 4 }}>FOR UK TRADESPEOPLE</span>
+            <span style={{ fontSize: 12, color: '#999', letterSpacing: 0.5, fontWeight: '500', paddingTop: 4 }}>FOR UK TRADESPEOPLE · COMING SOON</span>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 420px', gap: 80, alignItems: 'end' }}>
             <div>
@@ -41,22 +48,24 @@ export default function HomePage() {
                 Your numbers.<br />
                 <span style={{ color: '#f97316' }}>Under control.</span>
               </h1>
-              <p style={{ fontSize: 18, color: '#666', lineHeight: 1.75, maxWidth: 480, margin: '0 0 40px', fontWeight: '400' }}>
+              <p style={{ fontSize: 18, color: '#666', lineHeight: 1.75, maxWidth: 480, margin: '0 0 24px', fontWeight: '400' }}>
                 WorkBench is the construction management app built around how you actually work on site — not how a software company thinks you do.
               </p>
+              <p style={{ fontSize: 15, color: '#999', lineHeight: 1.6, maxWidth: 480, margin: '0 0 40px' }}>
+                We're putting the finishing touches on. Join the waitlist to get early access, a free extended trial, and be first in line when we launch.
+              </p>
               <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
-                <a href="#trial" style={{ backgroundColor: '#f97316', color: '#fff', padding: '15px 28px', borderRadius: 6, textDecoration: 'none', fontWeight: '700', fontSize: 16, letterSpacing: -0.3 }}>
-                  Start free trial
+                <a href="#waitlist" style={{ backgroundColor: '#f97316', color: '#fff', padding: '15px 28px', borderRadius: 6, textDecoration: 'none', fontWeight: '700', fontSize: 16, letterSpacing: -0.3 }}>
+                  Join the waitlist →
                 </a>
-                <a href="#how" style={{ color: '#1a1a18', textDecoration: 'none', fontWeight: '500', fontSize: 15, display: 'flex', alignItems: 'center', gap: 6 }}>
-                  See how it works
+                <a href="#features" style={{ color: '#1a1a18', textDecoration: 'none', fontWeight: '500', fontSize: 15, display: 'flex', alignItems: 'center', gap: 6 }}>
+                  See features
                   <span style={{ fontSize: 18 }}>↓</span>
                 </a>
               </div>
-              <p style={{ color: '#aaa', fontSize: 12, marginTop: 14, letterSpacing: 0.2 }}>30 days free · No card required · iOS & Android</p>
+              <p style={{ color: '#aaa', fontSize: 12, marginTop: 14, letterSpacing: 0.2 }}>Free extended trial for waitlist members · No spam ever</p>
             </div>
             <div>
-              {/* App mockup */}
               <div style={{ backgroundColor: '#1a1a18', borderRadius: 20, padding: 16, border: '1px solid #333' }}>
                 <div style={{ backgroundColor: '#242420', borderRadius: 12, padding: 16, marginBottom: 8 }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 14 }}>
@@ -85,7 +94,7 @@ export default function HomePage() {
                   <span style={{ color: '#ccc', fontSize: 12, lineHeight: 1.5 }}>Bull Cottage drainage overdue by 3 days — reschedule?</span>
                 </div>
               </div>
-              <p style={{ color: '#aaa', fontSize: 11, textAlign: 'center', marginTop: 12, letterSpacing: 0.3 }}>AVAILABLE ON iOS & ANDROID</p>
+              <p style={{ color: '#aaa', fontSize: 11, textAlign: 'center', marginTop: 12, letterSpacing: 0.3 }}>iOS & ANDROID · COMING SOON</p>
             </div>
           </div>
         </div>
@@ -145,8 +154,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* FEATURES — EDITORIAL */}
-      <section style={{ backgroundColor: '#1a1a18', padding: '80px 48px' }}>
+      {/* FEATURES */}
+      <section id="features" style={{ backgroundColor: '#1a1a18', padding: '80px 48px' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <div style={{ display: 'flex', gap: 8, alignItems: 'center', marginBottom: 48 }}>
             <span style={{ fontFamily: 'monospace', fontSize: 11, color: '#555', letterSpacing: 1 }}>WB-003</span>
@@ -160,9 +169,9 @@ export default function HomePage() {
             {[
               { title: 'Daily check-ins', desc: 'Log hours, materials and progress in under 5 minutes. Voice or text — your choice. Generates a professional site diary automatically.', tag: 'Daily' },
               { title: 'Job & phase management', desc: 'Break every job into phases. See progress at a glance. Colour-coded, ordered, and linked to your calendar.', tag: 'Jobs' },
-              { title: 'AI quoting', desc: 'Describe the job or upload drawings. AI generates a full bill of quantities — labour, materials, fixings. Export to Excel instantly.', tag: 'AI' },
+              { title: 'AI quoting', desc: 'Describe the job or upload drawings. Claude AI generates a full bill of quantities — labour, materials, fixings. Export to Excel instantly.', tag: 'AI' },
               { title: 'Gantt calendar', desc: 'Visual timeline across all your jobs and phases. AI scheduler moves things around when plans change, respecting hard deadlines.', tag: 'Planning' },
-              { title: 'Job financials', desc: 'Contract value, invoiced, paid, outstanding — all tracked per job. See your estimated profit update in real time as you log costs.', tag: 'Finance' },
+              { title: 'Job financials & invoicing', desc: 'Contract value, costs, variations — all tracked per job. Generate professional branded invoices and send directly to clients.', tag: 'Finance' },
               { title: 'MTD compliance', desc: 'Quarterly summaries generated automatically. CSV export. Xero integration. Never scramble for your accountant again.', tag: 'Tax' },
               { title: 'Subcontractor management', desc: 'Track hours, quotes and invoices for every sub across every job. GPS clock-in on mobile.', tag: 'Team' },
               { title: 'AI assistant', desc: 'Ask it anything. Write variation notices, draft client emails, summarise your week. Hands-free on site.', tag: 'AI' },
@@ -194,7 +203,7 @@ export default function HomePage() {
               MTD is here.<br />WorkBench has you covered.
             </h2>
             <p style={{ fontSize: 16, color: '#666', lineHeight: 1.8, marginBottom: 32, margin: '0 0 32px' }}>
-              From April 2026, sole traders earning over £50,000 must submit quarterly updates to HMRC digitally. WorkBench tracks your income and expenses automatically throughout the year — so there's nothing to scramble for.
+              From April 2026, sole traders earning over £50,000 must submit quarterly updates to HMRC digitally. WorkBench tracks your income and expenses automatically throughout the year — so there's nothing to scramble for at deadline time.
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
               {[
@@ -242,6 +251,9 @@ export default function HomePage() {
           <span style={{ width: 1, height: 16, backgroundColor: '#ddd9d3' }}></span>
           <span style={{ fontSize: 12, color: '#999', letterSpacing: 0.5, fontWeight: '500' }}>PRICING</span>
         </div>
+        <div style={{ marginBottom: 32, padding: '16px 20px', backgroundColor: '#f9731611', borderRadius: 10, border: '1px solid #f9731630', display: 'inline-block' }}>
+          <span style={{ color: '#f97316', fontSize: 14, fontWeight: '600' }}>🎁 Waitlist members get an extended free trial when we launch</span>
+        </div>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 0, border: '1px solid #ddd9d3', borderRadius: 12, overflow: 'hidden' }}>
           {[
             {
@@ -255,7 +267,7 @@ export default function HomePage() {
               name: 'Site Manager',
               price: '£19',
               desc: 'Contractors & site managers',
-              features: ['Everything in Tradesperson', 'AI-powered BOQ quoting', 'Subcontractor management', 'Job financials', 'Variations tracking', 'Phone call logger'],
+              features: ['Everything in Tradesperson', 'AI-powered BOQ quoting', 'Subcontractor management', 'Job financials & invoicing', 'Variations tracking', 'Phone call logger'],
               highlight: true,
             },
             {
@@ -288,7 +300,7 @@ export default function HomePage() {
                   </div>
                 ))}
               </div>
-              <a href="#trial" style={{
+              <a href="#waitlist" style={{
                 display: 'block', textAlign: 'center',
                 backgroundColor: plan.highlight ? '#f97316' : 'transparent',
                 color: plan.highlight ? '#fff' : '#1a1a18',
@@ -296,54 +308,83 @@ export default function HomePage() {
                 textDecoration: 'none', fontWeight: '700', fontSize: 14,
                 border: plan.highlight ? 'none' : '1px solid #ddd9d3',
               }}>
-                Start free trial
+                Join waitlist
               </a>
             </div>
           ))}
         </div>
-        <p style={{ color: '#aaa', fontSize: 13, marginTop: 16, textAlign: 'center' }}>30-day free trial on all plans. No credit card required.</p>
+        <p style={{ color: '#aaa', fontSize: 13, marginTop: 16, textAlign: 'center' }}>Pricing confirmed at launch. Waitlist members locked in at these rates.</p>
       </section>
 
-      {/* TESTIMONIALS */}
+      {/* BUILT BY */}
       <section style={{ maxWidth: 1200, margin: '0 auto', padding: '80px 48px', borderBottom: '1px solid #ddd9d3' }}>
         <div style={{ display: 'flex', gap: 8, alignItems: 'center', marginBottom: 48 }}>
           <span style={{ fontFamily: 'monospace', fontSize: 11, color: '#999', letterSpacing: 1 }}>WB-006</span>
           <span style={{ width: 1, height: 16, backgroundColor: '#ddd9d3' }}></span>
-          <span style={{ fontSize: 12, color: '#999', letterSpacing: 0.5, fontWeight: '500' }}>FROM THE FIELD</span>
+          <span style={{ fontSize: 12, color: '#999', letterSpacing: 0.5, fontWeight: '500' }}>WHY WORKBENCH</span>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 0, border: '1px solid #ddd9d3', borderRadius: 12, overflow: 'hidden' }}>
-          {[
-            { name: 'Dave K.', role: 'Carpenter · Manchester', quote: 'I used to spend Sunday evenings doing admin. Now I do it on site in 5 minutes with my voice. Honestly don\'t know how I managed without it.' },
-            { name: 'Sarah M.', role: 'Site Manager · Bristol', quote: 'The quoting system alone is worth it. A full BOQ that used to take me half a day now takes 10 minutes and looks more professional than anything I\'ve produced before.' },
-            { name: 'Tom R.', role: 'Joiner · Leeds', quote: 'MTD was stressing me out. WorkBench just tracks everything as you go. Showed my accountant and she was impressed.' },
-          ].map((t, i) => (
-            <div key={t.name} style={{ padding: '36px 32px', borderRight: i < 2 ? '1px solid #ddd9d3' : 'none', backgroundColor: '#f5f2ed' }}>
-              <div style={{ display: 'flex', gap: 3, marginBottom: 20 }}>
-                {[1,2,3,4,5].map(s => <span key={s} style={{ color: '#f97316', fontSize: 14 }}>★</span>)}
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'center' }}>
+          <div>
+            <h2 style={{ fontSize: 42, fontWeight: '900', letterSpacing: -1.5, lineHeight: 1.05, margin: '0 0 24px' }}>
+              Built by people who understand construction.
+            </h2>
+            <p style={{ fontSize: 16, color: '#666', lineHeight: 1.8, margin: '0 0 24px' }}>
+              Every other construction app was built by software companies who added a hard hat emoji and called it industry-specific. WorkBench was built from scratch around the real workflow of UK tradespeople.
+            </p>
+            <p style={{ fontSize: 16, color: '#666', lineHeight: 1.8, margin: '0 0 32px' }}>
+              We're talking to tradespeople every day during development. If you want to shape the product — join the waitlist and tell us what you need.
+            </p>
+            <a href="#waitlist" style={{ backgroundColor: '#f97316', color: '#fff', padding: '14px 28px', borderRadius: 6, textDecoration: 'none', fontWeight: '700', fontSize: 15, display: 'inline-block' }}>
+              Help shape WorkBench →
+            </a>
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+            {[
+              { icon: '🏗', title: 'Designed for site, not office', desc: 'Voice-first. Works with dirty hands. Minimal taps to log what matters.' },
+              { icon: '🤖', title: 'AI that actually helps', desc: 'Claude AI reads your drawings, generates your BOQ, writes your variation notices. Not a chatbot — a real assistant.' },
+              { icon: '📊', title: 'MTD ready from day one', desc: 'Built for the April 2026 deadline. Tracks everything automatically so there\'s nothing to scramble for.' },
+              { icon: '💷', title: 'Priced for tradespeople', desc: 'From £9/month. No setup fees. No long contracts. Cancel anytime.' },
+            ].map(item => (
+              <div key={item.title} style={{ display: 'flex', gap: 16, padding: '20px', backgroundColor: '#f0ede8', borderRadius: 12 }}>
+                <span style={{ fontSize: 28, flexShrink: 0 }}>{item.icon}</span>
+                <div>
+                  <div style={{ fontSize: 15, fontWeight: '700', color: '#1a1a18', marginBottom: 4 }}>{item.title}</div>
+                  <div style={{ fontSize: 13, color: '#666', lineHeight: 1.6 }}>{item.desc}</div>
+                </div>
               </div>
-              <p style={{ fontSize: 15, color: '#444', lineHeight: 1.75, marginBottom: 24, margin: '0 0 24px', fontStyle: 'italic' }}>"{t.quote}"</p>
-              <div>
-                <div style={{ fontSize: 14, fontWeight: '700', color: '#1a1a18' }}>{t.name}</div>
-                <div style={{ fontSize: 12, color: '#999', marginTop: 2 }}>{t.role}</div>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section id="trial" style={{ maxWidth: 1200, margin: '0 auto', padding: '80px 48px' }}>
-        <div style={{ backgroundColor: '#1a1a18', borderRadius: 16, padding: '72px 64px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 40 }}>
-          <div style={{ maxWidth: 540 }}>
-            <h2 style={{ fontSize: 48, fontWeight: '900', letterSpacing: -2, lineHeight: 1.05, color: '#f5f2ed', margin: '0 0 16px' }}>
-              Take control of your site.
+      {/* WAITLIST CTA */}
+      <section id="waitlist" style={{ maxWidth: 1200, margin: '0 auto', padding: '80px 48px' }}>
+        <div style={{ backgroundColor: '#1a1a18', borderRadius: 16, padding: '72px 64px', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: 60 }}>
+          <div style={{ maxWidth: 480 }}>
+            <div style={{ display: 'inline-block', backgroundColor: '#f9731622', border: '1px solid #f9731640', borderRadius: 4, padding: '4px 12px', marginBottom: 20 }}>
+              <span style={{ color: '#f97316', fontSize: 12, fontWeight: '700', letterSpacing: 0.5 }}>🚀 LAUNCHING SOON</span>
+            </div>
+            <h2 style={{ fontSize: 48, fontWeight: '900', letterSpacing: -2, lineHeight: 1.05, color: '#f5f2ed', margin: '0 0 20px' }}>
+              Be first in line.
             </h2>
-           <p style={{ fontSize: 17, color: '#666', lineHeight: 1.7, margin: 0 }}>
-            Join UK tradespeople who've stopped losing money to poor admin and started running their business properly.
-          </p>
-        </div>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 12, alignItems: 'flex-start', minWidth: 320 }}>
-          <WaitlistForm />
+            <p style={{ fontSize: 17, color: '#666', lineHeight: 1.7, margin: '0 0 28px' }}>
+              Join the waitlist and get early access the moment WorkBench launches on iOS and Android.
+            </p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+              {[
+                '✓ Early access before public launch',
+                '✓ Extended free trial — longer than standard',
+                '✓ Locked-in pricing at current rates',
+                '✓ Help shape the product before launch',
+                '✓ No spam — launch notification only',
+              ].map(item => (
+                <div key={item} style={{ fontSize: 14, color: '#888' }}>{item}</div>
+              ))}
+            </div>
+          </div>
+          <div style={{ flex: 1, minWidth: 320, maxWidth: 420 }}>
+            <WaitlistForm />
+          </div>
         </div>
       </section>
 
@@ -353,10 +394,10 @@ export default function HomePage() {
           <div style={{ display: 'flex', alignItems: 'center', gap: 28 }}>
             <span style={{ fontSize: 15, fontWeight: '800', color: '#1a1a18' }}>WorkBench</span>
             <span style={{ color: '#ddd9d3' }}>|</span>
-            <span style={{ color: '#aaa', fontSize: 13 }}>Built for UK tradespeople</span>
+            <span style={{ color: '#aaa', fontSize: 13 }}>Built for UK tradespeople · Launching 2026</span>
           </div>
           <div style={{ display: 'flex', gap: 28 }}>
-            <a href="#how" style={{ color: '#aaa', textDecoration: 'none', fontSize: 13 }}>How it works</a>
+            <a href="#features" style={{ color: '#aaa', textDecoration: 'none', fontSize: 13 }}>Features</a>
             <a href="#pricing" style={{ color: '#aaa', textDecoration: 'none', fontSize: 13 }}>Pricing</a>
             <a href="#mtd" style={{ color: '#aaa', textDecoration: 'none', fontSize: 13 }}>MTD</a>
             <a href="mailto:hello@workbenchtrades.co.uk" style={{ color: '#aaa', textDecoration: 'none', fontSize: 13 }}>Contact</a>
