@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'How WorkBench collects, uses, and protects your data, including Gmail, Google Calendar and Google Tasks data for accounts that connect Google.',
 };
 
-const SUPPORT_EMAIL = 'hello@workbenchtrades.co.uk';
+const SUPPORT_EMAIL = 'toolbeltsoftware@gmail.com';
 
 const SECTIONS: { heading: string; body: string }[] = [
   {
