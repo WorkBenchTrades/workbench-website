@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'The terms that govern your use of the WorkBench construction management app.',
 };
 
-const SUPPORT_EMAIL = 'hello@workbenchtrades.co.uk';
+const SUPPORT_EMAIL = 'toolbeltsoftware@gmail.com';
 
 const SECTIONS: { heading: string; body: string }[] = [
   {
