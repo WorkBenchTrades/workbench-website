@@ -100,6 +100,7 @@ export default function PrivacyPage() {
           </div>
           <div style={{ display: 'flex', gap: 28 }}>
             <a href="/" style={{ color: '#aaa', textDecoration: 'none', fontSize: 13 }}>Home</a>
+            <a href="/terms" style={{ color: '#aaa', textDecoration: 'none', fontSize: 13 }}>Terms of Service</a>
             <a href={`mailto:${SUPPORT_EMAIL}`} style={{ color: '#aaa', textDecoration: 'none', fontSize: 13 }}>Contact</a>
           </div>
           <span style={{ color: '#ccc', fontSize: 12 }}>© 2026 WorkBench</span>
