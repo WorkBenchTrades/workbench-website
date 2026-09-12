@@ -402,7 +402,7 @@ export default function HomePage() {
             <a href="#mtd" style={{ color: '#aaa', textDecoration: 'none', fontSize: 13 }}>MTD</a>
             <a href="/privacy" style={{ color: '#aaa', textDecoration: 'none', fontSize: 13 }}>Privacy</a>
             <a href="/terms" style={{ color: '#aaa', textDecoration: 'none', fontSize: 13 }}>Terms</a>
-            <a href="mailto:hello@workbenchtrades.co.uk" style={{ color: '#aaa', textDecoration: 'none', fontSize: 13 }}>Contact</a>
+            <a href="mailto:toolbeltsoftware@gmail.com" style={{ color: '#aaa', textDecoration: 'none', fontSize: 13 }}>Contact</a>
           </div>
           <span style={{ color: '#ccc', fontSize: 12 }}>© 2026 WorkBench</span>
         </div>
